@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+// import color mode that we created
+import { ColorModeContext, useMode } from "./theme";
+// reset css to default
+import { CssBaseline, ThemeProvider } from "@mui/material";
+// import routes
+import { Routes, Route } from "react-router-dom";
+
+import Topbar from "./scenes/global/topbar";
+// import Sidebar from "./scenes/global/sidebar";
+// import Pie from "./scenes/pie"
+// import Bar from "./scenes/bar"
+// import Line from "./scenes/line"
+// import Form from "./scenes/form"
+
+import Dashboard from "./scenes/dashboard";
+// import Reports from "./scenes/reports";
+// import SerialLogs from "./scenes/serialLogs";
+// import RemoteLogs from "./scenes/remoteLogs";
+// import Manage from "./scenes/manage";
+// import Incidents from "./scenes/incidents";
+// import KeyManagement from "./scenes/keyManagement";
+// import Login from "./scenes/login";
+// import ScriptingHub from "./scenes/scriptingHub";
+
+
 
 function App() {
+  const [theme, colorMode] = useMode();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="app">
+          <main className="content">
+            <Topbar />
+            <Routes>
+              {/* <Route path="/pie" element={<Pie />} /> */}
+              {/* <Route path="/line" element={<Line />} /> */}
+              {/* <Route path="/bar" element={<Bar />} /> */}
+              {/* <Route path="/form" element={<Form />} /> */}
+              <Route path="/dashboard" element={<Dashboard />} />
+              {/* <Route path="/reports" element={<Reports />} /> */}
+              {/* <Route path="/serialLogs" element={<SerialLogs />} /> */}
+              {/* <Route path="/remoteLogs" element={<RemoteLogs />} /> */}
+              {/* <Route path="/manage" element={<Manage />} /> */}
+              {/* <Route path="/incidents" element={<Incidents />} /> */}
+              {/* <Route path="/keyManagement" element={<KeyManagement />} /> */}
+              {/* <Route path="/login" element={<Login />} /> */}
+              {/* <Route path="/scriptingHub" element={<ScriptingHub />} /> */}
+            </Routes>
+          </main>
+        </div>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+  )
 }
 
 export default App;
