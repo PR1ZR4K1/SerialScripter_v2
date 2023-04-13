@@ -6,10 +6,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 
 import Topbar from "./scenes/global/topbar";
-// import Sidebar from "./scenes/global/sidebar";
-// import Pie from "./scenes/pie"
-// import Bar from "./scenes/bar"
-// import Line from "./scenes/line"
+import Sidebar from "./scenes/global/sidebar";
 // import Form from "./scenes/form"
 
 import Dashboard from "./scenes/dashboard";
@@ -32,12 +29,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <Sidebar />
           <main className="content">
             <Topbar />
             <Routes>
-              {/* <Route path="/pie" element={<Pie />} /> */}
-              {/* <Route path="/line" element={<Line />} /> */}
-              {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/form" element={<Form />} /> */}
               <Route path="/dashboard" element={<Dashboard />} />
               {/* <Route path="/reports" element={<Reports />} /> */}
