@@ -19,7 +19,13 @@ const Topbar = () => {
 
 
     return (
-    <Box display="flex" justifyContent="space-between" p={2}>
+    <Box 
+        display="flex" 
+        justifyContent="space-between" 
+        p={2}
+        backgroundColor={colors.blueAccent[800]} 
+
+        >
         {/* this box will b for page links for now it is a search bar*/}
         {/* <Box 
             display="flex" 
@@ -68,7 +74,6 @@ const Topbar = () => {
         </Box>
 
         {/* this box is for icons */}
-
         <Box 
             display="flex"
             color={colors.blueAccent[300]}

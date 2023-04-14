@@ -9,15 +9,13 @@ import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
-
-const Item = ({ title, to, icon, selected, setSelected }) => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+// parameters for item object
+const Item = ({ title, to, icon, selected, setSelected, color }) => {
   return (
     <MenuItem
       active={selected === title}
       style={{
-        color: colors.grey[100],
+        color: {color},
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -120,6 +118,7 @@ const Sidebar = () => {
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
+              color={colors.blueAccent[300]}
             />
 
             {/* <Typography

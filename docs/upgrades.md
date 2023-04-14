@@ -3,23 +3,40 @@
     - [ ] Move everything to react
 
     - [ ] Global
-        - [ ] topbar
+        - [ ] topbar 
+        - [ ] Sidebar (Will change per page by passing an object to it which will be placed below default elements)
 
     - [ ] Scenes
 
         - [ ] Index
-            - Charts (Top of Page)
-                - [ ] Metric for unresolved incidents/resolved incidents (can also be graph)
-                - [ ] Metric for Connected EDRs
-                - [ ] Graph for hosts enumd split into categories of connected to edr and disconnected
+            - [ ] Sidebar
+                - [ ] Graphs            
+            
+            - [ ] Panes
+                - General
 
-            - [ ] Table with host info  
-                - [ ] hostname
-                - [ ] ip
-                - [ ] OS
-                - [ ] num_incidents
-                - [ ] is_connected
-        
+                    - Charts (Top of Page)
+                        - [ ] Num Unresolved Incidents
+                        - [ ] Num Monitored Objects
+                        - [ ] Metric for unresolved incidents/resolved incidents (can also be graph)
+                        - [ ] Graph for hosts enumd split into categories of connected to edr and disconnected
+
+                    - [ ] Table with host info  
+                        - [ ] hostname
+                        - [ ] ip
+                        - [ ] OS
+                        - [ ] num_incidents
+                        - [ ] is_connected
+
+                - [ ] Graphs
+
+                    - [ ] Heat map for num incidents across network
+                    - [ ] DNS Map
+                    - [ ] Metric for unresolved incidents/resolved incidents (can also be graph)
+                    - [ ] Graph for hosts enumd split into categories of connected to edr and disconnected
+
+                
+
         - [ ] Reports
             - [ ] Table with options for which type of report to generate
                 - [ ] General
@@ -27,6 +44,8 @@
                 - [ ] Services 
                 - [ ] Network
                 - [ ] Open Ports
+                - [ ] Network Topology
+            - [ ] Dyanmic Report Maker
 
         - [ ] Logs
             - [ ] Serial Logs (Various internal server functions get logged)
@@ -46,6 +65,28 @@
                         - [ ] content/message
 
         - [ ] Manage
+            - [ ] Global Elements
+                - [ ] Hostname 
+                - [ ] IP Address
+                - [ ] Graph/Metric for Incidents
+                - [ ] EDR Connection Status
+
+            - [ ] Side Bar 
+                - [ ] Quick Stats
+                - [ ] Users
+                - [ ] Ports (Linux)
+                - [ ] Network Windows
+                - [ ] Services
+                - [ ] Firewall
+                - [ ] Monitor (Create Monitors)
+                - [ ] Remediation
+                - [ ] Host Logs
+
+            - [ ] Panes
+
+                - [ ] Quick Stats
+                    - [ ] OS Version
+                    - [ ]
 
         - [ ] Incidents
 
@@ -82,6 +123,14 @@
                             - [ ] linux scripts
                         - [ ] Linux Hosts pane
                             - [ ] linux hosts
+
+        - [ ] Visualize Network
+
+        - [ ] Network Topology
+
+        - [ ] TCP Dump for Scored Services
+        
+        - [ ] (Optional) Vsphere
                         
 
 
@@ -98,5 +147,12 @@
 
     - [ ] Features
         - [ ] User Action Logging (when user interacts with remote machine log action and store in db for reference)
+        - [ ] Flash Messages
+            - [ ] Incident Alert 
+                - [ ] Link to hosts' manage page - remediation pane
+
+    - [ ] Playbook
+        - [ ] Lockdown machine playbook
+
         
 

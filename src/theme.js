@@ -152,7 +152,7 @@ export const themeSettings = (mode) => {
                         light: colors.grey[100],
                     },
                     background: {
-                        default: colors.blueAccent[800],
+                        default: colors.blueAccent[700],
                     },
                 } : {
                     primary: {
@@ -209,9 +209,10 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
+    // returns mode and a function you can use to change mode
     const [mode, setMode] = useState("dark");
 
-    const colorMode = useMemo(
+    const colorMode = useMemo( 
         () => ({
             toggleColorMode: () =>
                 // if previous is light then set it to dark if previous was not light then set it to light
