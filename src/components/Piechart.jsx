@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { PieChart } from 'react-minimal-pie-chart';
 
 
-const Piechart = ({data, headerText, color, size, customId}) => 
+const Piechart = ({data, headerText, color, size, customId, startAngle}) => 
 {
     return (
         <Box
@@ -27,7 +27,7 @@ const Piechart = ({data, headerText, color, size, customId}) =>
                 <PieChart
                     data={data}
                     lineWidth={60}
-                    startAngle={90}
+                    startAngle={startAngle}
                     animate
                     animationDuration={500}
                     animationEasing="ease-out"

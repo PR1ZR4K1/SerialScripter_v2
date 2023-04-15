@@ -19,6 +19,7 @@
                         - [ ] Num Unresolved Incidents
                         - [ ] Num Monitored Objects
                         - [ ] Metric for unresolved incidents/resolved incidents (can also be graph)
+                            - [ ] *** Make creation dynamic in Piechart.jsx ***
                         - [ ] Graph for hosts enumd split into categories of connected to edr and disconnected
 
                     - [ ] Table with host info  

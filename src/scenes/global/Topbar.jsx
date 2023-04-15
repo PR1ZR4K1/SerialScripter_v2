@@ -7,9 +7,19 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import { Routes, Route } from "react-router-dom";
+
 
 // import SearchIcon from "@mui/icons-material/Search";
 
+// import Reports from "./scenes/reports";
+// import SerialLogs from "./scenes/serialLogs";
+// import RemoteLogs from "./scenes/remoteLogs";
+// import Manage from "./scenes/manage";
+// import Incidents from "./scenes/incidents";
+// import KeyManagement from "./scenes/keyManagement";
+// import Login from "./scenes/login";
+// import ScriptingHub from "./scenes/scriptingHub";
 
 const Topbar = () => {
     // This allows topbar to use different color modes
@@ -71,6 +81,18 @@ const Topbar = () => {
                     Reports
                 </Typography>
             </Box>
+            {/* <Routes> */}
+              {/* <Route path="/form" element={<Form />} /> */}
+              {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+              {/* <Route path="/reports" element={<Reports />} /> */}
+              {/* <Route path="/serialLogs" element={<SerialLogs />} /> */}
+              {/* <Route path="/remoteLogs" element={<RemoteLogs />} /> */}
+              {/* <Route path="/manage" element={<Manage />} /> */}
+              {/* <Route path="/incidents" element={<Incidents />} /> */}
+              {/* <Route path="/keyManagement" element={<KeyManagement />} /> */}
+              {/* <Route path="/login" element={<Login />} /> */}
+              {/* <Route path="/scriptingHub" element={<ScriptingHub />} /> */}
+            {/* </Routes> */}
         </Box>
 
         {/* this box is for icons */}

@@ -13,7 +13,7 @@ const Infobar = ({ boxes, color, size }) => {
         backgroundColor={color}
       >
         {boxes.map((BoxComponent) => (
-          <Box key={BoxComponent.props['data-id']} p={4}>
+          <Box key={BoxComponent.props['data-id']} p={2}>
             {React.cloneElement(BoxComponent, { size: size })}
           </Box>
         ))}
