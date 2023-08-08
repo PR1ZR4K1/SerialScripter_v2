@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
 
 // parameters for item object
-const SidebarItem = ({ title, to, icon, selected, setSelected, color }) => {
+const SidebarItem = ({ title, to, icon, selected, color }) => {
+  
     return (
       <MenuItem
-        active={selected === title}
+        active={selected.currentPage === title}
         style={{
           color: {color},
         }}
-        onClick={() => setSelected(title)}
         icon={icon}
       >
         <Typography>{title}</Typography>

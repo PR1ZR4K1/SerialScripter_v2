@@ -18,7 +18,7 @@ const Piechart = ({data, headerText, color, size, customId, startAngle}) =>
             borderRadius="5%"
         >
             <Box mb={1}>
-                <Typography variant="h4">{headerText}</Typography>
+                <Typography sx={{color: 'black'}} variant="h4">{headerText}</Typography>
             </Box>
             <Box
             width={100}
@@ -26,7 +26,7 @@ const Piechart = ({data, headerText, color, size, customId, startAngle}) =>
             >
                 <PieChart
                     data={data}
-                    lineWidth={60}
+                    lineWidth={40}
                     startAngle={startAngle}
                     animate
                     animationDuration={500}
@@ -38,12 +38,12 @@ const Piechart = ({data, headerText, color, size, customId, startAngle}) =>
                 <Box display="flex" alignItems="center">
                     <Box sx={{ width: 10, height: 10, backgroundColor: data[0].color, mr: 1 }} />
 
-                    <Typography > {data[0].title}</Typography>
+                    <Typography sx={{color: "black"}}> {data[0].title}</Typography>
                 </Box>
                 <Box display="flex" alignItems="center">
                     <Box sx={{ width: 10, height: 10, backgroundColor: data[1].color, mr: 1 }} />
 
-                    <Typography > {data[1].title}</Typography>
+                    <Typography sx={{color: "black"}}> {data[1].title}</Typography>
                 </Box>
             </Box>
         </Box>

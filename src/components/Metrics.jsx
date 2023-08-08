@@ -18,6 +18,7 @@ const Metrics = ({ number, text, color, size, customId }) => {
           <Box>
             <Typography 
               variant="h1"
+              sx={{color: "black"}}
             >
               {number}
             </Typography>
@@ -25,6 +26,7 @@ const Metrics = ({ number, text, color, size, customId }) => {
           <Box>
             <Typography
               variant="h6"
+              sx={{color: "black"}}
             >
               {text}
             </Typography>

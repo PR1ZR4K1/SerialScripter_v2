@@ -12,14 +12,14 @@
             - [ ] Sidebar
                 - [ ] Graphs            
             
-            - [ ] Panes
+            - [ ] Subscenes
                 - General
 
                     - Charts (Top of Page)
                         - [ ] Num Unresolved Incidents
                         - [ ] Num Monitored Objects
                         - [ ] Metric for unresolved incidents/resolved incidents (can also be graph)
-                            - [ ] *** Make creation dynamic in Piechart.jsx ***
+                            - [ ] *** Make creation dynamic in Piechart.jsx, add stock market like sliding ***
                         - [ ] Graph for hosts enumd split into categories of connected to edr and disconnected
 
                     - [ ] Table with host info  
@@ -29,7 +29,7 @@
                         - [ ] num_incidents
                         - [ ] is_connected
 
-                - [ ] Graphs
+                - [ ] Analytics
 
                     - [ ] Heat map for num incidents across network
                     - [ ] DNS Map
@@ -82,8 +82,9 @@
                 - [ ] Monitor (Create Monitors)
                 - [ ] Remediation
                 - [ ] Host Logs
+                - [ ] Backup
 
-            - [ ] Panes
+            - [ ] Subscenes
 
                 - [ ] Quick Stats
                     - [ ] OS Version
@@ -98,6 +99,7 @@
 
         - [ ] Scripting Hub
             - [ ] Sidebar Links
+                - [ ] add transition that makes it look like it swipes to either side to show the next panes depending on what is clicked
                 - [ ] Windows
                 - [ ] Linux
 
@@ -130,6 +132,9 @@
         - [ ] Network Topology
 
         - [ ] TCP Dump for Scored Services
+
+        - [ ] Backups
+            - [ ] Store hash of original backup and compare hash before distributing it to ensure changes have not been madeS
         
         - [ ] (Optional) Vsphere
                         

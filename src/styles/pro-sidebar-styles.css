@@ -1,0 +1,27 @@
+.pro-sidebar-inner {
+    background: #1a237e !important;
+  }
+  
+  .pro-icon-wrapper {
+    background-color: transparent !important;
+  }
+  
+  .pro-inner-item {
+    padding: 5px 35px 5px 20px !important;
+  }
+  
+  .pro-inner-item:hover {
+    color: #868dfb !important;
+  }
+  
+  .pro-menu-item.active {
+    color: #6870fa !important;
+  }
+  
+  .pro-sidebar {
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+  

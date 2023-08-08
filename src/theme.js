@@ -68,7 +68,7 @@ export const tokens = (mode) => ({
                 500: "#6870fa",
                 600: "#535ac8",
                 700: "#3e4396",
-                800: "#2a2d64",
+                800: "#18193A",
                 900: "#151632"
             },
         } : {
@@ -152,7 +152,7 @@ export const themeSettings = (mode) => {
                         light: colors.grey[100],
                     },
                     background: {
-                        default: colors.blueAccent[700],
+                        default: "#2A1E5C",
                     },
                 } : {
                     primary: {
@@ -220,7 +220,6 @@ export const useMode = () => {
         }),
         []
     );
-
     const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
     return [theme, colorMode];
